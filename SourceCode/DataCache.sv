@@ -1,3 +1,14 @@
+/**********************************************************************/
+/*              L1 SPILT CACHE                                        */										
+/* Description: This system verilog file designs the Data cache       */
+/*              of L1 spilt Cache for 32 bit processor. L1 data cache */			
+/*              is 8-way set associative and consists of 16k sets and */
+/*              64 byte lines.L1 data cache is write-back using write-*/
+/*              back. Cache employs LRU replacement policy            */
+/* Authors : Achyuth Krishna Chepuri                                  */
+/* 			                                                          */
+/**********************************************************************/
+
 module DataCache(clock,reset,addressbits,n);
 
 parameter MODE = 0;
