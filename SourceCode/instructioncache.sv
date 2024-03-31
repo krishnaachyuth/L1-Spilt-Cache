@@ -1,3 +1,14 @@
+/**********************************************************************/
+/*              L1 SPILT CACHE                                        */										
+/* Description: This system verilog file designs the instruction cache*/
+/*              of L1 spilt Cache for 32 bit processor. L1 instruction*/			
+/*              is 4-way set associative and consists of 16k sets and */
+/*              64 byte lines.Cache employs LRU replacement policy    */
+/* Authors : Achyuth Krishna Chepuri                                  */
+/* 			                                                          */
+/**********************************************************************/
+
+
 module InstructionCache(clock,reset,addressbits,n);
 
 parameter MODE = 0;
